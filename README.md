@@ -1,46 +1,250 @@
-# Getting Started with Create React App
+# 🎮 EBAC Games
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma aplicação de loja virtual de games desenvolvida com React, TypeScript, Redux Toolkit e RTK Query.
 
-## Available Scripts
+O projeto simula um e-commerce simples de jogos, permitindo listar produtos, adicionar itens ao carrinho e calcular o valor total automaticamente utilizando gerenciamento de estado global com Redux.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# 🚀 Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Front-end
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* React 18
+* TypeScript
+* Redux Toolkit
+* RTK Query
+* React Redux
+* Styled Components
 
-### `npm test`
+## Ferramentas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* ESLint
+* Prettier
+* Testing Library
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 📚 Conceitos Aplicados
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Este projeto foi desenvolvido com foco em estudos e prática dos seguintes conceitos:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Componentização no React
+* Gerenciamento de estado global
+* Redux Toolkit
+* RTK Query
+* Hooks do React
+* Hooks do Redux
+* Tipagem com TypeScript
+* Styled Components
+* Consumo de API
+* Organização de pastas
+* Boas práticas no React
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# 📂 Estrutura do Projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+src/
+│
+├── assets/
+│
+├── components/
+│   ├── Header/
+│   └── Produto/
+│
+├── containers/
+│   └── Produtos/
+│
+├── services/
+│   └── api.ts
+│
+├── store/
+│   ├── reducers/
+│   │   └── carrinho.ts
+│   │
+│   └── index.ts
+│
+├── styles/
+│
+├── App.tsx
+└── main.tsx
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# ⚙️ Funcionalidades
 
-## Learn More
+✅ Listagem de produtos
+✅ Carrinho de compras global
+✅ Soma automática do valor total
+✅ Bloqueio de itens duplicados
+✅ Consumo de API com RTK Query
+✅ Estilização com Styled Components
+✅ Tipagem completa com TypeScript
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 🛒 Fluxo da Aplicação
+
+```text
+Usuário
+   ↓
+Lista de Produtos
+   ↓
+Clique em "Adicionar ao carrinho"
+   ↓
+Redux Toolkit dispara action
+   ↓
+Reducer atualiza o estado global
+   ↓
+Header recalcula:
+- quantidade de itens
+- valor total
+   ↓
+React renderiza automaticamente
+```
+
+---
+
+# 🔥 Redux Toolkit
+
+O projeto utiliza Redux Toolkit para simplificar o gerenciamento de estado.
+
+### Slice do Carrinho
+
+Responsável por:
+
+* armazenar os itens;
+* adicionar produtos;
+* impedir duplicação.
+
+### Store Global
+
+Centraliza:
+
+* carrinho;
+* cache da API;
+* middleware.
+
+---
+
+# 🌐 RTK Query
+
+O RTK Query foi utilizado para:
+
+* fazer requisições HTTP;
+* cache automático;
+* controle de loading;
+* integração direta com Redux.
+
+---
+
+# 🎨 Styled Components
+
+A estilização foi feita utilizando Styled Components.
+
+Benefícios:
+
+* CSS isolado por componente;
+* reutilização;
+* manutenção facilitada;
+* código mais organizado.
+
+---
+
+# 📦 Instalação do Projeto
+
+## Clone o repositório
+
+```bash
+git clone URL_DO_REPOSITORIO
+```
+
+---
+
+## Entre na pasta
+
+```bash
+cd loja
+```
+
+---
+
+## Instale as dependências
+
+```bash
+npm install
+```
+
+---
+
+# ▶️ Executando o Projeto
+
+```bash
+npm start
+```
+
+O projeto será iniciado em:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# 🖥️ Fake API
+
+O projeto utiliza uma API fake local.
+
+Exemplo de endpoint:
+
+```bash
+http://localhost:4000/produtos
+```
+
+---
+
+# 📌 Scripts Disponíveis
+
+## Rodar o projeto
+
+```bash
+npm start
+```
+
+## Gerar build
+
+```bash
+npm run build
+```
+
+## Rodar testes
+
+```bash
+npm test
+```
+
+---
+
+# 📖 Aprendizados
+
+Durante o desenvolvimento deste projeto foram praticados conceitos importantes do ecossistema React moderno:
+
+* React com TypeScript
+* Redux Toolkit
+* RTK Query
+* Hooks personalizados
+* Estado global
+* Consumo de APIs
+* Componentização
+* Arquitetura Front-end
+
+---
+
+# 👨‍💻 Autor
+
+Desenvolvido para estudos e prática de desenvolvimento Front-end moderno utilizando React + Redux Toolkit.
+
+---

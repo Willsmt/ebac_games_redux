@@ -29,8 +29,6 @@ const Produto = ({ game }: Props) => {
         ))}
       </S.Plataformas>
       <S.Prices>
-
-        
         {game.precoAntigo && <small>{paraReal(game.precoAntigo)}</small>}
         <strong>{paraReal(game.preco)}</strong>
       </S.Prices>
